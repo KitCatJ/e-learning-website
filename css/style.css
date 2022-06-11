@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*NAV STYLES*/
+
+nav{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+nav img{
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+
+/*BUTTON STYLES*/
+
+.start, .start:active, .start:visited {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+
+}
+
+.btn1{
+    background-color: #666CA3;
+    float: right;
+}
+.btn1:hover{
+    opacity: 85%;
+}
+
+.btn2{
+    background-image: linear-gradient(#F02AA6, #FF6F48);
+}
+.btn2:hover{
+    opacity: 85%;
+}
+
+.btn3, .btn3:active, .btn3:visited{
+    border: none;
+    color: #F74780;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    float: bottom;
+}
+.btn3:hover{
+    opacity: 85%;
+}
+
+.btn4{
+    background-image: linear-gradient(#4851FF, #F02AA6);
+    float: right;
+    margin-top: 32px;
+    margin-right: 10%;
+}
+.btn4:hover {
+    opacity: 85%;
+}
+
+
+/*INFO BOX STYLES*/
+
+
+#info{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_text{
+    padding-left: 10%;
+}
+
+#info h1{
+    color: #13183F;
+    font-size: 56px;
+    font-family: 'Plus Jakarta Sans Extra Bold';
+}
+
+#info p{
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans Medium';
+    color: slategrey;
+}
+
+#img1{
+    display: none;
+}
+
+#img2{
+    width: 100%;
+}
+
+#img3{
+    display: none;
+}
+
+/*GRID*/
+
+.container{
+    display: grid;
+    height: 200vh;
+    grid-gap: 10px;
+    margin-right: 10%;
+    margin-left: 8%;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.container > *{
+    border-radius: 20px;
+    background-color: snow;
+    padding-left: 10%;
+    padding-right: 40%;
+    padding-bottom: 10%;
+    margin-bottom: 40px;
+    box-shadow: 1px 5px 5px slategrey;
+}
+
+.info_square{
+    font-family: "Plus Jakarta Sans Extra Bold";
+    color: white;
+    background-image: linear-gradient(#F02AA6, #FF6F48);
+    height: 150px;
+    text-align: center;
+    padding: 0;
+}
+
+.container h3{
+    color: #13183F;
+    font-family: "Plus Jakarta Sans Extra Bold";
+    font-size: 32px;
+}
+
+.container p{
+    color: slategrey;
+    font-family: "Plus Jakarta Sans Medium";
+    font-size: 18px;
+}
+.container img{
+    margin-top: -20px;
+}
+
+
+
+/*FOOTER STYLES*/
+
+
+footer{
+    background-color: #13183F;
+    height: 15vh;
+    width: 100%;
+    display: inline-block;
+    position: sticky;
+}
+
+footer img{
+    margin-top: 40px;
+    margin-left: 10%;
+}
+
+
+
+/* MEDIA QUERIES*/
+
+@media (min-width: 768px) {
+
+    /*NAV STYLES*/
+
+    nav {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    /*INFO STYLES*/
+
+    .info_text{
+        width: 40%;
+    }
+
+    #img2{
+        display: none;
+    }
+    #img3{
+        display: block;
+        position: sticky;
+        width: 100%;
+        float: right;
+    }
+
+    /*GRID*/
+
+    .container {
+        height: 100vh;
+        margin-top: 100px;
+        padding: 0.85em;
+        grid-gap: 30px;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .info_square {
+        padding: 20% 20% 30% 10%;
+        height: 340px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    /*NAV STYLES*/
+
+    nav {
+        width: 75%;
+    }
+
+    /*INFO STYLES*/
+
+    #img1 {
+        display: block;
+        position: static;
+        width: 90%;
+        float: right;
+        overflow: visible;
+        margin-top: -80px;
+        padding-right: -50px;
+    }
+
+    #img3{
+        display: none;
+    }
+
+    /*GRID*/
+
+    .container {
+        grid-gap: 30px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    .info_square {
+        padding: 20% 20% 30% 10%;
+        height: 340px;
+    }
+
+    /* FOOTER STYLES*/
+
+    footer {
+        background-color: #13183F;
+        height: 15vh;
+        width: 100%;
+        display: inline-block;
+    }
+
+    footer img {
+        margin-top: 40px;
+        margin-left: 10%;
+    }
+}
+
+
+
